@@ -1,3 +1,4 @@
+/* Box scroll part  */
 #scrollContainer {
     scrollbar-width: thin; /* Firefox-specific property */
     overflow-y: scroll; /* Ensure vertical scroll */
