@@ -111,16 +111,16 @@
         </div>
 
         <!-- PlayerBox -->
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div class="border border-[#101010] rounded-xl my-4 lg:my-6 px-8 py-2 items-center bg-gray-100 col-span-2">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                    <div>
+                    <div id="scrollContainer" class="h-[72rem] overflow-y-scroll">
                         <div class="border border-[#101010] rounded-xl my-4 lg:my-6 p-3 items-center bg-gray-50">
                             <h2 class="bg-[#101010] text-white text-md md:text-2xl lg:text-2xl font-semibold rounded-md text-center p-2">MIDDLEWEIGHT</h2>
                            <div class="px-4">
                                 <p class="font-bold text-md md:text-xl lg:text-xl text-[#4F4F4F] py-3 text-center">LIMIT: 160 LBS / 72.5 KG</p>
                                 <img src="./img/Player/OLEKSANDR USYK.png" class="mx-auto w-72 md:w-full lg:w-full" alt="">
-                                <div class="py-3 flex items-center flex-wrap text-2xl font-semibold gap-4">
+                                <div class="py-3 flex items-center text-2xl font-semibold gap-4">
                                     <p class="text-sm md:text-2xl lg:text-2xl">ZHANIBEK 'QAZAQ STYLE' ALIMKHANULY
                                     </p>
                                     <img src="./img/Player/flag/AUSTRALIA FLAG.png" alt="">
@@ -137,7 +137,7 @@
                            <div class="px-4">
                                 <p class="font-bold text-md md:text-xl lg:text-xl text-[#4F4F4F] py-3 text-center">LIMIT: 140 LBS / 63.5 KG</p>
                                 <img src="./img/Player/OLEKSANDR USYK (1).png" class="mx-auto w-72 md:w-full lg:w-full" alt="">
-                                <div class="py-3 flex items-center flex-wrap text-2xl font-semibold gap-4">
+                                <div class="py-3 flex items-center text-2xl font-semibold gap-4">
                                     <p class="text-sm md:text-2xl lg:text-2xl">TEOFIMO 'THE TAKEOVER' LOPEZ
                                     </p>
                                     <img src="./img/Player/flag/AUSTRALIA FLAG (1).png" alt="">
@@ -153,7 +153,7 @@
                            <div class="px-4">
                                 <p class="font-bold text-md md:text-xl lg:text-xl text-[#4F4F4F] py-3 text-center">LIMIT: 160 LBS / 72.5 KG</p>
                                 <img src="./img/Player/OLEKSANDR USYK.png" class="mx-auto w-72 md:w-full lg:w-full" alt="">
-                                <div class="py-3 flex items-center flex-wrap text-2xl font-semibold gap-4">
+                                <div class="py-3 flex items-center text-2xl font-semibold gap-4">
                                     <p class="text-sm md:text-2xl lg:text-2xl">ZHANIBEK 'QAZAQ STYLE' ALIMKHANULY
                                     </p>
                                     <img src="./img/Player/flag/AUSTRALIA FLAG.png" alt="">
@@ -169,7 +169,7 @@
                            <div class="px-4">
                                 <p class="font-bold text-md md:text-xl lg:text-xl text-[#4F4F4F] py-3 text-center">LIMIT: 160 LBS / 72.5 KG</p>
                                 <img src="./img/Player/OLEKSANDR USYK.png" class="mx-auto w-72 md:w-full lg:w-full" alt="">
-                                <div class="py-3 flex items-center flex-wrap text-2xl font-semibold gap-4">
+                                <div class="py-3 flex items-center text-2xl font-semibold gap-4">
                                     <p class="text-sm md:text-2xl lg:text-2xl">ZHANIBEK 'QAZAQ STYLE' ALIMKHANULY
                                     </p>
                                     <img src="./img/Player/flag/AUSTRALIA FLAG.png" alt="">
@@ -183,8 +183,20 @@
                     </div>
                 </div>
             </div>
-            <div>jj</div>
+               <!-- Scroll buttons -->
+               <div class="absolute top-1/2 right-[-3rem] flex items-center gap-2">
+                <div class="flex flex-col space-y-2">
+                    <button id="scrollUp" class="p-2 hover:shadow text-4xl">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                    <button id="scrollDown" class="p-2 hover:shadow text-4xl">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+                <img src="./img/Black.png" class="w-5" alt="">
+            </div>
          </div>
+        
 
         <!-- FooterUp Section  -->
         <div>
@@ -232,5 +244,6 @@
         <p class="text-xl md:text-2xl lg:text-2xl text-center uppercase text-white pb-3">c boxingpoll 2024. all rights reserved</p>
     </div>
    
+    <script src="./js/index.js"></script>
 </body>
 </html>
