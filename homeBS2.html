@@ -100,8 +100,8 @@
         </div>
 
         <!-- PlayerBox -->
-        <div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6">
+        <div id="cardsContainer">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6 card-group " data-group="1">
                 <div class=" border border-[#101010] rounded-xl  p-3 items-center bg-gray-50">
                     <h2 class="bg-[#101010] text-white text-md md:text-2xl lg:text-2xl font-semibold rounded-md text-center p-2">LIGHT HEAVYWEIGHT
                     </h2>
@@ -155,7 +155,7 @@
                    </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6 card-group" data-group="2">
                 <div class="border border-[#101010] rounded-xl p-3 items-center bg-gray-50">
                     <h2 class="bg-[#101010] text-white text-md md:text-2xl lg:text-2xl font-semibold rounded-md text-center p-2">JUNIOR MIDDLEWEIGHT
                     </h2>
@@ -210,7 +210,7 @@
                    </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6 card-group" data-group="3">
                 <div class=" border border-[#101010] rounded-xl  p-3 items-center bg-gray-50">
                     <h2 class="bg-[#101010] text-white text-md md:text-2xl lg:text-2xl font-semibold rounded-md text-center p-2">LIGHTWEIGHT
                     </h2>
@@ -265,7 +265,7 @@
                    </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6 card-group" data-group="4">
                 <div class="border border-[#101010] rounded-xl p-3 items-center bg-gray-50">
                     <h2 class="bg-[#101010] text-white text-md md:text-2xl lg:text-2xl font-semibold rounded-md text-center p-2">JUNIOR FEATHERWEIGHT
                     </h2>
@@ -321,7 +321,7 @@
                    </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-6 card-group" data-group="5">
                 <div class="border border-[#101010] rounded-xl p-3 items-center bg-gray-50">
                     <h2 class="bg-[#101010] text-white text-md md:text-2xl lg:text-2xl font-semibold rounded-md text-center p-2">FLYWEIGHT
                     </h2>
@@ -376,6 +376,19 @@
                         </div>
                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="container mx-auto p-4">
+            <!-- Navigation Buttons -->
+            <div class="flex justify-center space-x-4 mb-6">
+                <button class="btn btn-active bg-[#101010] text-white py-2 px-4 rounded" onclick="showCards(1)">1</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="showCards(2)">2</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="showCards(3)">3</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="showCards(4)">4</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="showCards(5)">5</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="showCards(6)">6</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="showCards(7)">7</button>
+                <button class="btn bg-gray-300 text-black py-2 px-4 rounded" onclick="nextSlide()">></button>
             </div>
         </div>
         
