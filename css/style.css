@@ -1,3 +1,6 @@
+*{
+scroll-behavior: smooth;
+}
 /* Box scroll part  */
 #scrollContainer {
     scrollbar-width: thin; /* Firefox-specific property */
